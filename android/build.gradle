@@ -5,6 +5,9 @@ allprojects {
     }
 }
 
+// Force Java 17 for Gradle
+System.setProperty("org.gradle.java.home", "/opt/homebrew/Cellar/openjdk@17/17.0.16/libexec/openjdk.jdk/Contents/Home")
+
 rootProject.buildDir = "../build"
 subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"

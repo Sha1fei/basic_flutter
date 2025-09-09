@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Gradle: generateLockfiles",
+      "type": "shell",
+      "command": "./gradlew",
+      "args": [
+        "generateLockfiles"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/android",
+        "env": {
+          "JAVA_HOME": "/opt/homebrew/Cellar/openjdk@17/17.0.16/libexec/openjdk.jdk/Contents/Home"
+        }
+      },
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
